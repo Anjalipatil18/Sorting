@@ -13,3 +13,15 @@ while (i<array.length){
     i++;
 } 
 console.log(array)
+
+let a=[4,-1,0,4,2,-9]
+for (let i=0; i<a.length; i++){
+  for (let j=i+1; j<a.length; j++){
+    if (a[i]>a[j]){
+      let swap=a[i]
+          a[i]=a[j]
+          a[j]=swap
+    }
+  }
+}
+console.log(a);
